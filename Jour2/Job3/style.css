@@ -1,0 +1,31 @@
+body{
+    background-color: #F5F5F5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E5E5E5;
+    padding: 10px 0;
+}
+
+.titre{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+#p1{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+a[target="_blank"] {
+    color: blue;
+    text-decoration: underline;
+}

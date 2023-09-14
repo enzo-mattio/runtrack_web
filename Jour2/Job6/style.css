@@ -1,0 +1,75 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
+}
+
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    justify-items: center;
+}
+
+
+.main__article {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.header__nav__item {
+    /* affichage en colomne */
+    display: flex;
+    list-style: none;
+}
+
+.header__nav__item a {
+    text-decoration: none;
+    color: #000;
+    padding: 0.5rem;
+}
+
+.header__nav__item a:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.main__article__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.main__article__p {
+    font-size: 1rem;
+}
+
+/* Faire tourner le bouton quand hover */
+
+.main__button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #000;
+    color: #fff;
+    transition: transform 1s ease-in-out;
+}
+
+.main__button:hover {
+    transform: rotate(360deg);
+}
+

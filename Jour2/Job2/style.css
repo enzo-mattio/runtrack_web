@@ -1,0 +1,26 @@
+body{
+    background-color: #F5F5F5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
+
+.navbar{
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.titre{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#p1{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a[target="_blank"] {
+    color: blue;
+    text-decoration: underline;
+}

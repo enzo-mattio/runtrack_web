@@ -1,0 +1,114 @@
+:root {
+    --color-primary: #fff;
+    --color-secondary: #000;
+    --color-tertiary: #00F;
+    --article-color: #fff;
+    --article-border-color: #F00;
+    --font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styles globaux */
+body {
+    background-color: var(--color-primary);
+    font-family: var(--font-family);
+    color: var(--color-tertiary);
+}
+
+/* Styles pour .header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-tertiary);
+}
+
+/* Styles pour .main */
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    justify-items: center;
+}
+
+/* Styles pour .main__article */
+.main__article {
+    text-align: center;
+    border: 1px solid var(--article-border-color);
+    padding: 1rem;
+    background-color: var(--article-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour .header__nav */
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+/* Styles pour .header__nav__item */
+.header__nav__item {
+    background-color: var(--color-tertiary);
+    display: flex;
+    list-style: none;
+}
+
+/* Styles pour .header__nav__item a */
+.header__nav__item a {
+    text-decoration: none;
+    color: var(--color-primary);
+    padding: 0.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.header__nav__item a:hover {
+    color: var(--color-tertiary);
+    background-color: var(--color-primary);
+    cursor: pointer;
+}
+
+/* Styles pour .main__article__title */
+.main__article__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-tertiary);
+}
+
+.main__article__title::before {
+    content: "👏🏼 ";
+}
+
+/* Styles pour .main__article__p */
+.main__article__p {
+    font-size: 1rem;
+}
+
+.main__article__p::before {
+    content: "👉 ";
+}
+
+.main__article__p::after {
+    content: " 👈";
+}
+
+ /* Media queries */
+@media screen and (max-width: 768px) {
+    .header__nav {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header__nav {
+        flex-direction: initial;
+    }
+}
